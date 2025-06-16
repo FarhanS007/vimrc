@@ -13,6 +13,7 @@ set number
 set relativenumber
 set cino+=L0
 set clipboard=unnamedplus
+colorscheme habamax
 syntax on
 filetype indent on
 filetype off
