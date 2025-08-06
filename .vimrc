@@ -13,12 +13,14 @@ set number
 set relativenumber
 set cino+=L0
 set clipboard=unnamedplus
-colorscheme habamax
 syntax on
 filetype indent on
 filetype off
 setlocal indentkeys-=:
- 
+set termguicolors " (optional, improves color support)
+set background=dark
+colorscheme xcodedarkhc
+
 "keybindings for { completion, "jk" for escape, ctrl-a to select all
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {}     {}
@@ -42,6 +44,9 @@ Plugin 'lervag/vimtex'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vimsence/vimsence'
+Plugin 'arzg/vim-colors-xcode'
 call vundle#end()
 filetype plugin indent on
+
 
